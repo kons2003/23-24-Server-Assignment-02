@@ -41,4 +41,4 @@ FROM 예약
 JOIN 극장
 ON 예약.theater_id=극장.id
 JOIN 고객
-ON 예약.customer_id=고객.id
+ON 예약.customer_id=고객.id;
