@@ -11,7 +11,7 @@ CREATE TABLE 고객 (
 );
 
 CREATE TABLE 예약 (
-    num INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     theater_id INTEGER,
     customer_id INTEGER ,
     FOREIGN KEY(theater_id) REFERENCES 극장(id),
@@ -30,7 +30,7 @@ VALUES (1, '홍길동', '남'),
        (3, '박지수', '여'),
        (4, '김지은', '여');
 
-INSERT INTO 예약 (num, theater_id, customer_id)
+INSERT INTO 예약 (id, theater_id, customer_id)
 VALUES (1, 2, 1),
        (2, 3, 3),
        (3, 1, 2),
